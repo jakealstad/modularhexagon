@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from werkzeug.contrib.fixers import ProxyFix
 
 
 app = Flask(__name__)
@@ -9,5 +10,7 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
+app.wsgi_app = ProxyFix(app.wsgi_app)
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
