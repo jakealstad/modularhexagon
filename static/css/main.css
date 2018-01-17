@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: 98%;
 }
 
 .wrapper {
@@ -11,4 +11,35 @@ html, body {
 svg {
   display: block;
   margin: 0 auto;
+}
+
+#footer {
+  font-family: 'Supermercado One', cursive;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin: 0 auto;
+}
+
+#hex {
+  width: 260px;
+  height: 300px;
+  background: #000;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: 10s poly infinite ease-in-out;
+  margin: 1em auto;
+  display: block;
+}
+
+@keyframes poly {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
 }
