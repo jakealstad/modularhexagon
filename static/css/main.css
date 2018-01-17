@@ -29,7 +29,7 @@ a {
   background: #000;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  animation: 10s poly infinite ease-in-out;
+  animation: 36s poly infinite linear;
   margin: 1em auto;
   display: block;
 }
